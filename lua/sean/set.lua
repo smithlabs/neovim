@@ -1,3 +1,7 @@
+-- Disable comments being auto added on new lines
+vim.cmd("autocmd BufEnter * set formatoptions-=cro")
+vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
+
 vim.opt.guicursor = ""
 vim.opt.number = true
 vim.opt.relativenumber = true
